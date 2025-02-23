@@ -7,11 +7,6 @@ function doGet(e) {
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
 }
 
-// function doGet() {
-//   return HtmlService.createHtmlOutputFromFile('index')
-//       .setTitle('Formulir Karyawan');
-// }
-
 function include(filename) {
    return HtmlService.createTemplateFromFile(filename).evaluate()
       .getContent();
@@ -20,3 +15,8 @@ function include(filename) {
 function myURL() {
    return ScriptApp.getService().getUrl();
 }
+
+function showLoading() {
+   $('#spinnerModal').modal('show');
+   //$('#spinnerModal').modal('hide');
+};
