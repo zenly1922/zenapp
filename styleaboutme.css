@@ -168,7 +168,8 @@
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .header {
-        height: 150px;
+        height: 100px;
+        widht: 100%;
     }
 
     .container-biodata {
